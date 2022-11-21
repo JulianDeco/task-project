@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://JulianDeco.github.io/React-Taks",
+  "homepage": "https://JulianDeco.github.io/task-project",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
