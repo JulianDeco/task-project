@@ -10,7 +10,7 @@ export const TaskCreator = (props) => {
   };
 
   return (
-  <form onSubmit={handleSubmit} className='my-2 row'>
+  <form onSubmit={handleSubmit} className='my-2 row' aria-label="form">
 
     <div className='col-9 '>
       <input
