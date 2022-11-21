@@ -1,14 +1,1 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: left;
-}
 
-.card {
-  padding: 2em;
-}
-
-.btnSaveTask{
-  margin: 0.5em;
-}
