@@ -6,8 +6,8 @@ export const VisibilityControl = ({ setShowCompleted, cleanTasks, isChecked }) =
         }
     }
     return (
-    <div className="d-flex jutifiy-content-between bg-secondary text-white text-center p-2 border-secondary">
-        <div className="form-check form-switch">
+    <div className="row d-flex jutifiy-content-between bg-dark text-white text-center p-2 border-secondary rounded">
+        <div className="form-check form-switch col-8">
             <input
                 type="checkbox"
                 checked={ isChecked }
@@ -17,7 +17,7 @@ export const VisibilityControl = ({ setShowCompleted, cleanTasks, isChecked }) =
             <label>Show Tasks Done</label>
         </div>
 
-        <button onClick={ handleDelete } className="btn btn-danger btn-sm">
+        <button onClick={ handleDelete } className="col-4 btn btn-danger btn-sm">
             Clear
         </button>
     </div>

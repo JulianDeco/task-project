@@ -5,14 +5,17 @@ export const TaskCreator = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.createNewTask(newTaskName)
+    if (newTaskName !== '') {
+      props.createNewTask(newTaskName)
+    }
+    
     setNewTaskName("");
   };
 
   return (
-  <form onSubmit={handleSubmit} className='my-2 row' aria-label="form">
+  <form onSubmit={handleSubmit} className=' row d-flex flex-column justify-content-center text-center bg-dark rounded' aria-label="form">
 
-    <div className='col-9 '>
+    <div className='my-2'>
       <input
         className='form-control'
         type="text"
@@ -21,7 +24,7 @@ export const TaskCreator = (props) => {
         onChange={(e) => setNewTaskName(e.target.value)}
       />
     </div>
-    <div className='col-3'>
+    <div className='my-2'>
       <button className = "btn btn-primary btn-sm">Save Task</button>
     </div>
   </form>
